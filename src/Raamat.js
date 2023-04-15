@@ -1,10 +1,10 @@
-function Raamat() {
+function Raamat(props) {
     return (
         <div className="RaamatAndmed">
-            <p>Pealkiri: "XXXXXX"</p>
-            <p>Autor: XXXXXX XXXXXXX</p>
-            <p>Avalikustatud: 20XX</p>
-            <p>Kirjeldus: lorem ipsum</p>
+            <p>Pealkiri: "{props.Pealkiri}"</p>
+            <p>Autor: {props.Autor}</p>
+            <p>Avalikustatud: {props.Avalikustatud}</p>
+            <p>{props.Kirjeldus}</p>
         </div>
     )
 }
