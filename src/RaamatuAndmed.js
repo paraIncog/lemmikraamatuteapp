@@ -30,8 +30,7 @@ const raamat3 = {
 
 function RaamatuAndmed() {
     return(
-        <div className="foreground_block">
-            <p>Raamatu Andmed</p>
+        <div className="card_block">
             <Raamat
                 Pealkiri={raamat1.Pealkiri}
                 Autor={raamat1.Autor}
@@ -52,6 +51,9 @@ function RaamatuAndmed() {
                 Avalikustatud={raamat3.Avalikustatud}
                 Kirjeldus={raamat3.Kirjeldus}
                 RPilt={raamat3.RPilt}
+            />
+            <Raamat
+                Kirjeldus="Lorem Ipsum"
             />
         </div>
     )

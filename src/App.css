@@ -1,4 +1,5 @@
 body {
+  background-color: lightgray;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -9,19 +10,33 @@ body {
   padding-top: 2rem;
 }
 
-.RaamatAndmed {
+.card_block {
   border: 1px solid black;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding-top: 0.5rem;
-}
-
-.foreground_block {
-  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: white;
 }
 
 .WIPtext {
   color: red;
+}
+
+.bookimg {
+  width: 10rem;
+  height: 15rem;
+}
+
+.element {
+  border: 1px solid black;
+}
+
+.RaamatAndmed {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.RaamatKirj {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
