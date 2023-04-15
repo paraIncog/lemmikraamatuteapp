@@ -1,7 +1,12 @@
+import Raamat from "./Raamat"
+
 function RaamatuAndmed() {
     return(
-        <div>
+        <div className="foreground_block">
             <p>Raamatu Andmed</p>
+            <Raamat />
+            <Raamat />
+            <Raamat />
         </div>
     )
 }
