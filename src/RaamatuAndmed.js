@@ -28,33 +28,22 @@ const raamat3 = {
     RPilt: m_laar_pic
 }
 
+const raamatud = [raamat1, raamat2, raamat3]
+
 function RaamatuAndmed() {
     return(
         <div className="card_block">
-            <Raamat
-                Pealkiri={raamat1.Pealkiri}
-                Autor={raamat1.Autor}
-                Avalikustatud={raamat1.Avalikustatud}
-                Kirjeldus={raamat1.Kirjeldus}
-                RPilt={raamat1.RPilt}
-            />
-            <Raamat
-                Pealkiri={raamat2.Pealkiri}
-                Autor={raamat2.Autor}
-                Avalikustatud={raamat2.Avalikustatud}
-                Kirjeldus={raamat2.Kirjeldus}
-                RPilt={raamat2.RPilt}
-            />
-            <Raamat
-                Pealkiri={raamat3.Pealkiri}
-                Autor={raamat3.Autor}
-                Avalikustatud={raamat3.Avalikustatud}
-                Kirjeldus={raamat3.Kirjeldus}
-                RPilt={raamat3.RPilt}
-            />
-            <Raamat
-                Kirjeldus="Lorem Ipsum"
-            />
+            {raamatud.map((raamat, index) => {
+                return (
+                <Raamat
+                key={index}
+                Pealkiri={raamat.Pealkiri}
+                Autor={raamat.Autor}
+                Avalikustatud={raamat.Avalikustatud}
+                Kirjeldus={raamat.Kirjeldus}
+                RPilt={raamat.RPilt}
+            />)
+            })}
         </div>
     )
 }
