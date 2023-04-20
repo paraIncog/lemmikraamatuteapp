@@ -3,8 +3,10 @@ import Raamat from "./Raamat"
 import g_orwell_pic from './book_pics/g_orwell_pic.jpg';
 import a_exupery_pic from './book_pics/a_exupery_pic.jpg';
 import m_laar_pic from './book_pics/m_laar_pic.jpg';
+import RaamatuOtsing from "./RaamatuOtsing";
 
 const raamat1 = {
+    id: 1,
     Pealkiri: '1984',
     Autor: 'George Orwell',
     Avalikustatud: 1949,
@@ -13,6 +15,7 @@ const raamat1 = {
 }
 
 const raamat2 = {
+    id: 2,
     Pealkiri: 'Väike Prints',
     Autor: 'Antoine de Saint-Exupery',
     Avalikustatud: 1943,
@@ -21,6 +24,7 @@ const raamat2 = {
 }
 
 const raamat3 = {
+    id: 3,
     Pealkiri: 'Sinimäed 1944',
     Autor: 'Mart Laar',
     Avalikustatud: 2006,
@@ -33,10 +37,11 @@ const raamatud = [raamat1, raamat2, raamat3]
 function RaamatuAndmed() {
     return(
         <div className="card_block">
+            <RaamatuOtsing />
             {raamatud.map((raamat, index) => {
                 return (
                 <Raamat
-                key={index}
+                key={raamat.id}
                 Pealkiri={raamat.Pealkiri}
                 Autor={raamat.Autor}
                 Avalikustatud={raamat.Avalikustatud}

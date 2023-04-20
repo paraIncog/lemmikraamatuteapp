@@ -31,7 +31,7 @@ function RaamatuteNimekiri() {
                     Lisa veel mehi
                 </p>
                 <button onClick={lisamehi}>+</button>
-                <button onClick={mehedpurjus}>Mehed joovad</button>
+                {/* <button onClick={mehedpurjus}>Mehed joovad</button> */}
             </div>
         </div>
     )
